@@ -4,11 +4,16 @@
 /// <reference path="./subjects/Java.ts" />
 /// <reference path="./subjects/React.ts" />
 
-export const cpp = new Subjects.Cpp();
-export const java = new Subjects.Java();
-export const react = new Subjects.React();
+import Cpp = Subjects.Cpp;
+import Java = Subjects.Java;
+import React = Subjects.React;
+import Teacher = Subjects.Teacher;
 
-export const cTeacher: Subjects.Teacher = {
+const cpp = new Cpp();
+const java = new Java();
+const react = new React();
+
+const cTeacher: Teacher = {
   firstName: 'John',
   lastName: 'Doe',
   experienceTeachingC: 10,
